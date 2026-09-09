@@ -83,3 +83,5 @@ s.waitForBoot({
     }).play;
 
 });
+
+ServerQuit.add({ 0.exit });
