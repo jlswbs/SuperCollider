@@ -61,7 +61,7 @@ s.waitForBoot({
         nativeFlute = nativeFlute * EnvGen.kr(Env.perc(0.8, 4.5, 1, -2), fluteTrig);
         nativeFlute = DelayC.ar(nativeFlute, 0.01, SinOsc.kr(5.5, 0, 0.001, 0.003)); 
 
-		finalStereo = Pan2.ar(crickets * 2.1, LFNoise1.kr(0.04).range(-0.8, 0.8));
+		finalStereo = Pan2.ar(crickets * 2.2, LFNoise1.kr(0.04).range(-0.8, 0.8));
         finalStereo = finalStereo + Pan2.ar(deepWind * 1.3, LFNoise1.kr(0.02).range(-0.6, 0.6));
         finalStereo = finalStereo + Pan2.ar(frameDrum * 1.1, LFNoise1.kr(0.1).range(-0.1, 0.1)); 
         finalStereo = finalStereo + Pan2.ar(shaker * 0.3, SinOsc.kr(tempo * 0.25).range(-0.7, 0.7)); 
@@ -71,7 +71,7 @@ s.waitForBoot({
         reverb = FreeVerb2.ar(
             finalStereo[0],       
             finalStereo[1],       
-            mix: 0.4,             
+            mix: 0.38,             
             room: 0.95,           
             damp: 0.35            
         );
